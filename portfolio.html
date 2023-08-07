@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Singh (BE Dev)</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      /* Dark background color */
+      color: #fff;
+      /* Text color */
+    }
+
+    .profile-container {
+      margin-bottom: 20px;
+    }
+
+    .profile-photo {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /* Quote Section Styles */
+    .quote-section {
+      text-align: center;
+      padding: 40px;
+      background-color: #444;
+      /* Dark background color */
+      color: #fff;
+      /* Text color */
+    }
+
+    .quote-container {
+      max-width: 600px;
+      margin: 0 auto;
+      border-left: 4px solid #4CAF50;
+      /* Green border for the quote */
+      padding-left: 20px;
+    }
+
+    .quote {
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    .author {
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 13px;
+      margin-top: 15px;
+      display: block;
+    }
+
+    /* About Me Section Styles */
+    .about-section {
+      padding: 20px;
+      background-color: #222;
+      /* Dark background color */
+      color: #fff;
+      /* Text color */
+      text-align: center;
+    }
+
+    .animated-text {
+      display: inline-block;
+      overflow: hidden;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      animation: fadeIn 2s;
+      /* Fade-in animation for the text */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+
+    /* Skills Section Styles */
+    .skills-section {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      /* Dark background color */
+      color: #fff;
+      /* Text color */
+    }
+
+    .skills-section h2 {
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    .skills-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills-section li {
+      display: inline-block;
+      margin: 8px;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: #fff;
+      border-radius: 20px;
+      font-family: 'Roboto', Arial, sans-serif;
+      font-weight: bold;
+    }
+
+
+        /* Connect with Me section styles */
+        .connect-section {
+            text-align: center;
+            padding: 40px;
+            background-color: #333; /* Dark background color */
+        }
+
+        .connect-text h2 {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #fff; /* Header text color */
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .social-links li a {
+            text-decoration: none;
+            color: #fff; /* Link text color */
+            background-color: #333; /* Link background color */
+            padding: 8px 12px; /* Adjust padding as needed */
+            border-radius: 5px; /* Rounded corners for the links */
+        }
+
+        .social-links li a:hover {
+            background-color: #0056b3; /* Link background color on hover */
+        }
+
+        /* Adjust the font size and padding as needed for icons */
+        .social-links li i {
+            font-size: 24px;
+            padding-right: 5px;
+        }
+
+        /* Adjust text color for dark background */
+        .connect-text p {
+            color: #fff;
+        }
+
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      .profile-photo {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  </style>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="profile-container">
+      <img src="me_airport.jpg" alt="Profile Photo" class="profile-photo">
+      <h1>Rahul Singh Rajput</h1>
+      <p>
+        BE Dev
+      </p>
+    </div>
+  </header>
+
+  <section class="quote-section">
+    <div class="quote-container">
+      <blockquote class="quote">
+        "From nothing to something defines, the real dedication and character of a man."
+      </blockquote>
+      <cite class="author">—Anonymous</cite>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p class="animated-text"></p>
+    </div>
+  </section>
+
+
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Django</li>
+      <li>Django Rest Framework</li>
+      <li>Celery</li>
+      <li>Django Channels (websocket)</li>
+      <!-- Add more skills here -->
+    </ul>
+  </section>
+
+<section class="connect-section">
+    <div class="connect-text">
+        <h2>Connect with Me</h2>
+        <ul class="social-links">
+ <li><a href="https://instagram.com/rahul_singh_rajput3292" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+ <li><a href="https://m.facebook.com/profile.php/?id=100024483641774" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+           <li><a href="https://t.me/django_lover" target="_blank"><i class="fab fa-telegram"></i>Telegram</a></li>
+            <li><a href="https://www.linkedin.com/in/rahul-singh-41614417b" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/rahulsingh3292" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+            
+            <!-- Add more social media links as needed -->
+        </ul>
+    </div>
+</section>
+
+
+
+  <script src="portfolio.js">
+
+  </script>
+  <script>
+    animateAboutMe()
+  </script>
+</body>
+</html>
