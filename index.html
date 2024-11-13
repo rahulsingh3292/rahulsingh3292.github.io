@@ -3,251 +3,266 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahul Singh (BE Dev)</title>
-  <style>
-    /* Global Styles */
-    body {
-      font-family: 'Open Sans', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* Header Styles */
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      /* Dark background color */
-      color: #fff;
-      /* Text color */
-    }
-
-    .profile-container {
-      margin-bottom: 20px;
-    }
-
-    .profile-photo {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    /* Quote Section Styles */
-    .quote-section {
-      text-align: center;
-      padding: 40px;
-      background-color: #444;
-      /* Dark background color */
-      color: #fff;
-      /* Text color */
-    }
-
-    .quote-container {
-      max-width: 600px;
-      margin: 0 auto;
-      border-left: 4px solid #4CAF50;
-      /* Green border for the quote */
-      padding-left: 20px;
-    }
-
-    .quote {
-      font-family: 'Roboto', Arial, sans-serif;
-      font-size: 14px;
-      font-style: italic;
-      line-height: 1.4;
-    }
-
-    .author {
-      font-family: 'Open Sans', Arial, sans-serif;
-      font-size: 13px;
-      margin-top: 15px;
-      display: block;
-    }
-
-    /* About Me Section Styles */
-    .about-section {
-      padding: 20px;
-      background-color: #222;
-      /* Dark background color */
-      color: #fff;
-      /* Text color */
-      text-align: center;
-    }
-
-    .animated-text {
-      display: inline-block;
-      overflow: hidden;
-      font-family: 'Roboto', Arial, sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      animation: fadeIn 2s;
-      /* Fade-in animation for the text */
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-
-    /* Skills Section Styles */
-    .skills-section {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      /* Dark background color */
-      color: #fff;
-      /* Text color */
-    }
-
-    .skills-section h2 {
-      font-family: 'Roboto', Arial, sans-serif;
-    }
-
-    .skills-section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .skills-section li {
-      display: inline-block;
-      margin: 8px;
-      padding: 8px 16px;
-      background-color: #4CAF50;
-      color: #fff;
-      border-radius: 20px;
-      font-family: 'Roboto', Arial, sans-serif;
-      font-weight: bold;
-    }
-
-
-        /* Connect with Me section styles */
-        .connect-section {
-            text-align: center;
-            padding: 40px;
-            background-color: #333; /* Dark background color */
-        }
-
-        .connect-text h2 {
-            font-family: 'Roboto', Arial, sans-serif;
-            color: #fff; /* Header text color */
-        }
-
-        .social-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .social-links li {
-            display: inline-block;
-            margin: 10px;
-        }
-
-        .social-links li a {
-            text-decoration: none;
-            color: #fff; /* Link text color */
-            background-color: #333; /* Link background color */
-            padding: 8px 12px; /* Adjust padding as needed */
-            border-radius: 5px; /* Rounded corners for the links */
-        }
-
-        .social-links li a:hover {
-            background-color: #0056b3; /* Link background color on hover */
-        }
-
-        /* Adjust the font size and padding as needed for icons */
-        .social-links li i {
-            font-size: 24px;
-            padding-right: 5px;
-        }
-
-        /* Adjust text color for dark background */
-        .connect-text p {
-            color: #fff;
-        }
-
-
-    /* Responsive Styles */
-    @media only screen and (max-width: 600px) {
-      .profile-photo {
-        width: 120px;
-        height: 120px;
-      }
-    }
-  </style>
-
+  <title>Rahul Singh Rajput - Portfolio</title>
+  
+  <!-- Font Awesome for Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="./portfolio.js"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <div class="profile-container">
-      <img src="me_airport.jpg" alt="Profile Photo" class="profile-photo">
-      <h1>Rahul Singh Rajput</h1>
-      <p>
-        BE Dev
+<body class="min-h-screen text-gray-100 bg-gray-900">
+
+  <!-- Header Section -->
+  <header class="py-12 text-center">
+    <div class="container mx-auto px-4">
+      <!-- Image with AOS Animation -->
+      <img src="./me_airport.jpg" alt="Rahul Singh Rajput" 
+        class="rounded-full mx-auto mb-6 transition-transform duration-300 hover:scale-105 w-32 h-32 object-cover"
+        data-aos="fade-up" 
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      />
+      
+      <!-- Name with AOS Animation -->
+      <h1 class="text-4xl font-bold text-stone-400 mb-2"
+        data-aos="fade-left"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      >
+        Rahul Singh Rajput
+      </h1>
+      
+      <!-- Job Title with AOS Animation -->
+      <p class="text-xl text-gray-400"
+        data-aos="fade-right"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      >
+      Backend Developer 
+      <span class="text-sm">(2+ years)</span>
       </p>
     </div>
   </header>
 
-  <section class="quote-section">
-    <div class="quote-container">
-      <blockquote class="quote">
-        "From nothing to something defines, the real dedication and character of a man."
+  <!-- Quote Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <blockquote class="max-w-2xl mx-auto text-center"
+        data-aos="fade-up"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      >
+        <p class="text-2xl italic mb-4">&ldquo;From nothing to something defines the real dedication and character of a man.&rdquo;</p>
+        <cite class="text-stone-400">— Anonymous</cite>
       </blockquote>
-      <cite class="author">—Anonymous</cite>
     </div>
   </section>
 
-  <section class="about-section">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p class="animated-text"></p>
+  <!-- About Me Section -->
+  <section class="py-16" id="about">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-stone-400 mb-8"
+        data-aos="fade-up"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      >
+        About Me
+      </h2>
+      <p class="max-w-2xl mx-auto text-center text-lg"
+        data-aos="fade-up"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200">
+I’m a backend engineer with two years of experience, specializing in Python and Django. Driven by the goal of becoming a top-tier software engineer, I’m passionate about building reliable, scalable systems to solve real-world problems with innovation and efficiency. Currently at ButtonShift, I’m focused on developing quality software, continuously refining my skills, and striving to make a meaningful impact through my work.
+      </p>
     </div>
   </section>
 
-
-  <section class="skills-section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Python</li>
-      <li>Django</li>
-      <li>Django Rest Framework</li>
-      <li>Celery</li>
-      <li>Django Channels (websocket)</li>
-      <!-- Add more skills here -->
-    </ul>
+  <!-- Skills Section -->
+  <section class="py-16" id="skills">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-stone-400 mb-8"
+        data-aos="fade-up"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      >
+        Skills
+      </h2>
+      <ul class="flex flex-wrap justify-center gap-4">
+        <li class="bg-gray-700 text-stone-300 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          data-aos="zoom-in"
+           data-aos-once="true"
+          data-aos-duration="300"
+          data-aos-offset="200"
+        >
+          Python
+        </li>
+        <li class="bg-gray-700 text-stone-300 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          data-aos="zoom-in"
+           data-aos-once="true"
+          data-aos-duration="300"
+          data-aos-delay="100"
+          data-aos-offset="200"
+        >
+          Django
+        </li>
+        <li class="bg-gray-700 text-stone-300 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          data-aos="zoom-in"
+           data-aos-once="true"
+          data-aos-duration="300"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          Django Rest Framework
+        </li>
+        <li class="bg-gray-700 text-stone-300 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          data-aos="zoom-in"
+           data-aos-once="true"
+          data-aos-duration="300"
+          data-aos-delay="300"
+          data-aos-offset="200"
+        >
+          WebSocket
+        </li>
+        <li class="bg-gray-700 text-stone-300 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          data-aos="zoom-in"
+           data-aos-once="true"
+          data-aos-duration="300"
+          data-aos-delay="400"
+          data-aos-offset="200"
+        >
+          PostgreSQL
+        </li>
+        <li class="bg-gray-700 text-stone-300 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 hover:bg-blue-600 hover:text-white"
+          data-aos="zoom-in"
+           data-aos-once="true"
+          data-aos-duration="300"
+          data-aos-delay="500"
+          data-aos-offset="200"
+        >
+          Message Queues
+        </li>
+      </ul>
+    </div>
   </section>
 
-<section class="connect-section">
-    <div class="connect-text">
-        <h2>Connect with Me</h2>
-        <ul class="social-links">
- <li><a href="https://instagram.com/rahul_singh_rajput3292" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
- <li><a href="https://m.facebook.com/profile.php/?id=100024483641774" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
-           <li><a href="https://t.me/django_lover" target="_blank"><i class="fab fa-telegram"></i>Telegram</a></li>
-            <li><a href="https://www.linkedin.com/in/rahul-singh-41614417b" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/rahulsingh3292" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-            
-            <!-- Add more social media links as needed -->
-        </ul>
+  <!-- Education Section -->
+  <section class="py-16" id="education">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-stone-400 mb-8"
+        data-aos="fade-up"
+         data-aos-once="true"
+        data-aos-duration="500"
+        data-aos-offset="200"
+      >
+        Education
+      </h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg text-center border-2 border-gray-800 shadow-md hover:border-gray-500 duration-200"
+          data-aos="fade-up"
+           data-aos-once="true"
+          data-aos-duration="500"
+          data-aos-delay="100"
+          data-aos-offset="200"
+        >
+          <h3 class="text-xl font-semibold mb-2">BCA</h3>
+          <p class="text-gray-400 mb-1">Chandigarh University</p>
+          <p class="text-stone-400">Ongoing</p>
+        </div>
+        <div class="p-6 rounded-lg text-center border-2 border-gray-800 shadow-md hover:border-gray-500 duration-200"
+          data-aos="fade-up"
+           data-aos-once="true"
+          data-aos-duration="500"
+          data-aos-delay="200"
+          data-aos-offset="200"
+        >
+          <h3 class="text-xl font-semibold mb-2">12th Standard</h3>
+          <p class="text-gray-400 mb-1">PPDIC Inter College</p>
+          <p class="text-stone-400">Completed</p>
+        </div>
+        <div class="p-6 rounded-lg text-center border-2 border-gray-800 shadow-md hover:border-gray-500 duration-200"
+          data-aos="fade-up"
+           data-aos-once="true"
+          data-aos-duration="500"
+          data-aos-delay="300"
+          data-aos-offset="200"
+        >
+          <h3 class="text-xl font-semibold mb-2">10th Standard</h3>
+          <p class="text-gray-400 mb-1">New Surya Anti Devi Inter College</p>
+          <p class="text-stone-400">Completed</p>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
+  <!-- Connect Section -->
+  <section class="py-16" id="connect">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-stone-400 mb-8"
+     
+      >
+        Connect with Me
+      </h2>
+      <div class="flex justify-center space-x-6">
+        <a href="https://instagram.com/rahul_singh_rajput3292" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition-colors duration-300"
+          
+        >
+          <span class="fab fa-instagram text-2xl" aria-hidden="true"></span>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://m.facebook.com/profile.php/?id=100024483641774" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-sky-500 transition-colors duration-300"
+          
+        >
+          <span class="fab fa-facebook text-2xl" aria-hidden="true"></span>
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a href="https://t.me/django_lover" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-500 transition-colors duration-300"
+          
+        >
+          <span class="fab fa-telegram text-2xl" aria-hidden="true"></span>
+          <span class="sr-only">Telegram</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rahul-singh-41614417b" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-700 transition-colors duration-300"
+          
+        >
+          <span class="fab fa-linkedin text-2xl" aria-hidden="true"></span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+        <a href="https://github.com/rahulsingh3292" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-stone-400 transition-colors duration-300"
+          
+        >
+          <span class="fab fa-github text-2xl" aria-hidden="true"></span>
+          <span class="sr-only">GitHub</span>
+        </a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 py-6 text-center text-gray-500">
+    <div class="container mx-auto px-4">
+      <p>&copy; 2024 Rahul Singh Rajput. All rights reserved.</p>
+    </div>
+  </footer>
 
-  <script src="portfolio.js">
-
-  </script>
+  <!-- AOS JS Initialization -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
-    animateAboutMe()
+    // Initialize AOS
+    AOS.init();
   </script>
+
 </body>
 </html>
