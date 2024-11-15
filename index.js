@@ -44,12 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
         item.classList.remove('hover:bg-blue-600')
         item.classList.remove('random-color-btn')
       }
-
-      // Smooth scroll to the clicked project (it will be focused on top)
-      window.scrollTo({
-        top: item.offsetTop - 20,  // Adds a small offset to show the clicked project near the top
-        behavior: 'smooth'
-      });
     });
   });
 });
